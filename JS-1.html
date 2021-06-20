@@ -63,45 +63,38 @@
               <tr>                
                 <td>炸醬麵</td>
                 <td>50</td>
-                <td><input class="btn btn-dark btn-sm" type="button" value="加入" id="btn1"></td>
-              </tr>
-              <tr>                
-                <td>綜合滷味</td>
-                <td>70</td>
-                <td><input class="btn btn-dark btn-sm" type="button" value="加入"id="btn2"></td>
-              </tr>
-              <tr>               
-                <td></td>
-                <td></td>
-                <td><input class="btn btn-dark btn-sm" type="button" value="總計"id="btn3"></td></td>
-              </tr>                        
+               <td><input class="btn btn-dark btn-sm" type="button" value="加入" id="btn1" onclick="Num1()"></td>
+
+                </tr>
+                <tr>
+                    <td>綜合滷味</td>
+                    <td>70</td>
+                    <td><input class="btn btn-dark btn-sm" type="button" value="加入" id="btn2" onclick="Num2()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input class="btn btn-dark btn-sm" type="button" value="總計" id="btn3" onclick="Num3()"></td>
+                    </td>
+                </tr>
             </tbody>
-          </table>
+        </table>
 
     </div>
     <script>
-        var btn1= document.getElementById('btn1');
-        var btn1 = 50;        
-        var btn2= document.getElementById('btn2');
+        var count = 0;
+        var btn1 = 50;
         var btn2 = 70;
-        var btn3= document.getElementById('btn3');
-        var btn3 = btn1+btn2;
+        var btn3 = btn1 + btn2;
 
-        btn1.getElementById('btn1'){
+        document.getElementById("btn1").onclick = function Num1() { count++ };
+        document.getElementById("btn2").onclick = function Num2() { count++ };
 
-        });
-
-        btn2.getElementById("click",function(){
-
-        });    
-        
-        btn3.getElementById("click",function() {
-            
-            alert("總金額為:");
-        });    
-
-    </script>
-
+        document.getElementById("btn3").addEventListener("click", Num3(btn1,btn2));
+        function Num3(btn1,btn2) {            
+            let total = btn1 + btn2;       
+            alert("總金額為:" + total.toString());
+        };
     <!-- <script>
         document.write("Hi");
         // 文件.物件 顯示HI
