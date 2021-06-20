@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 對應IE瀏覽器是EDGE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>中午吃什麼</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <!-- sticky-top 固定在上方 -->
+        <a class="navbar-brand" href="index.html">菜菜練習題</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="JS-1.html">中午吃什麼</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <table class="table table-hover ">
+            <thead>
+              <tr>
+                <th scope="col">項目</th>
+                <th scope="col">產品</th>
+                <th scope="col">單價</th>
+                <th scope="col">數量</th>          
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>炸醬麵</td>
+                <td>50</td>
+                <td><input class="btn btn-dark btn-sm" type="button" value="加入" id="btn1"></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>綜合滷味</td>
+                <td>70</td>
+                <td><input class="btn btn-dark btn-sm" type="button" value="加入"id="btn2"></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td></td>
+                <td></td>
+                <td><input class="btn btn-dark btn-sm" type="button" value="總計"id="btn3"></td></td>
+              </tr>                        
+            </tbody>
+          </table>
+
+    </div>
+    <script>
+        var btn1= document.getElementById('btn1');
+        var btn1 = 50;        
+        var btn2= document.getElementById('btn2');
+        var btn2 = 70;
+        var btn3= document.getElementById('btn3');
+        var btn3 = btn1+btn2;
+
+        btn1.addEventListener("click",function(){
+
+        });
+
+        btn2.addEventListener("click",function(){
+
+        });    
+        
+        btn3.addEventListener("click",function() {
+            
+            alert("總金額為:");
+        });    
+
+    </script>
+
+    <!-- <script>
+        document.write("Hi");
+        // 文件.物件 顯示HI
+        prompt()
+        // 視窗跳出輸入框
+    </script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
